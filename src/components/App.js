@@ -1,12 +1,12 @@
 import '../assets/App.css';
 import { Provider } from 'react-redux';
-import StockNews from './StockNews';
+import StocksList from '../containers/StocksList';
 import store from '../redux/store';
 
 function App() {
   return (
     <Provider store={store}>
-      <StockNews />
+      <StocksList />
     </Provider>
   );
 }

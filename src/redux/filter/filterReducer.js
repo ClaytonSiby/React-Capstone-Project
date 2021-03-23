@@ -1,6 +1,6 @@
 import { CHANGE_FILTER } from './filterTypes';
 
-const filterReducer = (state = 'All', action) => {
+const filterReducer = (state = 'AAPL,FB,GOOG,AMZN,MSFT', action) => {
     switch(action.type) {
         case CHANGE_FILTER:
             return action.payload
