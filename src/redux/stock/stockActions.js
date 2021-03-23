@@ -17,10 +17,11 @@ const fetchStocksFailure = error => ({
 
 const URL = process.env.REACT_APP_URL;
 const API_KEY = process.env.REACT_APP_STOCKS_API_KEY;
+const parameter = document.querySelector('select').value;
 
 const fetchStocks = () => dispatch => {
   dispatch(fetchStocksRequest());
-  axios.get(`${URL}limit=50&apikey=${API_KEY}`)
+  axios.get(`${URL}${parameter}&apikey=${API_KEY}`)
     .then(response => {
       dispatch(fetchStocksSuccess(response));
     })
