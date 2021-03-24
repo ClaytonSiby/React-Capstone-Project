@@ -1,6 +1,5 @@
 import React from 'react'
 import { Col, Card } from 'react-bootstrap'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import { truncate } from '../helpers/truncate'
 import RouteGenerator from './RouteGenerator';
 
